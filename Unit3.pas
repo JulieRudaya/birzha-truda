@@ -140,6 +140,7 @@ type
     procedure MenuDeleteData(Sender: TObject);
     procedure MenuEditData(Sender: TObject);
     procedure MenuSpecialFuncs(Sender: TObject);
+    procedure MenuSaveData(Sender: TObject);
     procedure MenuExitNoSave(Sender: TObject);
     procedure MenuExitWithSave(Sender: TObject);
   public
@@ -1272,8 +1273,9 @@ begin
   AddItem('6. Удаление данных из списка',           MenuDeleteData);
   AddItem('7. Редактирование данных',               MenuEditData);
   AddItem('8. Подбор кандидатов и дефицит',         MenuSpecialFuncs);
-  AddItem('9. Выход без сохранения',                MenuExitNoSave);
-  AddItem('10. Выход с сохранением',                MenuExitWithSave);
+  AddItem('9. Сохранить изменения',                 MenuSaveData);
+  AddItem('10. Выход без сохранения',                MenuExitNoSave);
+  AddItem('11. Выход с сохранением',                MenuExitWithSave);
 
   PopupMenu1.Popup(Mouse.CursorPos.X, Mouse.CursorPos.Y);
 end;
@@ -1512,6 +1514,12 @@ begin
     BtnMatchFirmClick(Sender)
   else if Choice = 2 then
     BtnDeficitClick(Sender);
+end;
+
+procedure TForm3.MenuSaveData(Sender: TObject);
+begin
+  SaveDataToFiles; // Вызывает уже существующую процедуру сохранения
+  // ShowMessage('Данные сохранены'); // Раскомментировать, если нужно уведомление
 end;
 
 procedure TForm3.MenuExitNoSave(Sender: TObject);
