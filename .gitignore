@@ -1,0 +1,33 @@
+# Delphi / RAD Studio
+*.dcu
+*.dsk
+*.local
+*.identcache
+*.projdata
+*.stat
+*.dproj.local
+*.skincfg
+__history/
+__recovery/
+Win32/
+Win64/
+Android/
+iOS/
+OSX/
+Linux/
+Debug/
+Release/
+
+# Executables
+*.exe
+*.dll
+
+# Data files
+*.dat
+*_report.txt
+firms.dat
+cands.dat
+
+# System
+Thumbs.db
+Desktop.ini
