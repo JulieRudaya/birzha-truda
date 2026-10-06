@@ -1,0 +1,13 @@
+commit eed447f5837352af163c4a3651e2fb47a7c6d8f9
+Author: Julie Rudaya <wlesiya@gmail.com>
+Date:   Tue Oct 6 20:12:18 2026 +0300
+
+    Добавлена функция сохранения изменений без выхода из программы
+    
+    - В Unit3.pas добавлена процедура MenuSaveData
+
+commit c8e4467788ddf2ac7145e7c5bb56c56477ae276e
+Author: Julie Rudaya <wlesiya@gmail.com>
+Date:   Tue Oct 6 17:37:47 2026 +0300
+
+    Initial commit: project Birzha truda (Delphi)
